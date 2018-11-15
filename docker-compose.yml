@@ -1,0 +1,11 @@
+version: '2'
+services:
+  discourse2:
+    image: dockerimages.fhcrc.org/discourse2:latest
+    ports:
+      - "2222:80"
+
+    labels:
+      io.rancher.container.pull_image: always
+
+    restart: always
